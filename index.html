@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="stylesheet" href="/src/style.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/@unocss/reset@66.1.1/tailwind-compat.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body class="tema tema--escuro" id="body">
+      <nav class="">
+          <ul class="flex">
+              <li ><a href="https://fkaique.github.io"><p class="-color bv">Home</p></a></li>
+              <li><a href="https://fkaique.github.io/src/geral/gerador%20de%20personagens/gerador.html"><p class="link">Galeria</p></a></li>
+              <li><a href="https://fkaique.github.io/src/geral/Projetos/dormitorio/index.html"><p class="link">Dormitório</p></a></li>
+              <li class="flex-1"></li>
+              <li ><button id="tema" class="mudar-tema bg-text"></button></li>
+          </ul>
+      </nav>
+    <div id="app">
+      <div class="conteudo">
+        <button id="btn"><h1>Sort</h1></button><br>
+        <input title="digite numeros separados por ','" type="text" id="input" placeholder="10,4,200,3,5,4"/>
+        <p id="p1"></p>
+        <p id="p2"></p>
+      </div>
+      <footer class="rodape">
+      <ul class="lista">
+          <li class="li"><a href="https://github.com/Fkaique"><strong class="color-secondary">GitHub</strong> : Fkaique</a></li>
+          <li class="li"><a href="https://mysteriescradle.itch.io/"><strong class="color-secondary">Itch.io</strong> : MysteriesCradle</a></li>
+          <li class="li"><a href="https://gx.games/pt-br/studios/b861e49e-f878-4cf1-8b3c-5c48eb75418e/"><strong class="color-secondary">GxGames</strong> : MysteriesCradle</a></li>
+      </ul>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
