@@ -1,4 +1,4 @@
-name: Vite CI (pnpm + tsc)
+name: Vite CI (pnpm)
 
 on:
   push:
@@ -18,15 +18,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 10.10.0
+      - name: Enable Corepack
+        run: corepack enable
 
-      - name: Instalar dependências
+      - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build (tsc + vite)
+      - name: Build
         run: pnpm build
